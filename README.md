@@ -367,24 +367,24 @@ This produces nice looking code that is easy to read.
 
 ## Variable Names
 
-Use `snake_case` for variable names in your scripts.
+Use `camelCcase` for variable names in your scripts.
 
 ```yaml
 # bad
 - name: 'set some facts'
   set_fact:
-    myBoolean: true
+    my_Boolean: true
     myint: 20
     MY_STRING: 'test'
 
 # good
 - name: 'set some facts'
   set_fact:
-    my_boolean: true
-    my_int: 20
-    my_string: 'test'
+    myBoolean: true
+    myInt: 20
+    myString: 'test'
 ```
 
 ### Why?
 
-Ansible uses `snake_case` for module names so it makes sense to extend this convention to variable names.
+Nos gustan los dromedarios (en realidad es un dromedario),
